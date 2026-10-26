@@ -319,7 +319,7 @@
   <header class="topbar">
     <div class="wrap">
       <span class="logo">배달의민족</span>
-      <a class="mini-cta js-download" data-pos="header" href="#">앱 설치하고 혜택받기</a>
+      <a class="mini-cta js-download" data-cta="header_install" data-cta-type="download" href="#">앱 설치하고 혜택받기</a>
     </div>
   </header>
 
@@ -387,16 +387,16 @@
           <li><i>+</i>친구 초대 둘 다 <b data-b="friend.amount">5,000원</b></li>
         </ul>
         <div class="timer"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="#fff" stroke-width="1.6"/><path d="M8 4.5V8l2.4 1.6" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>오늘 혜택 마감까지 <strong id="countdown">00:00:00</strong></div>
-        <a class="cta js-download" data-pos="hero" href="#">앱 받고 혜택 3종 받기 →</a>
+        <a class="cta js-download" data-cta="hero_main" data-cta-type="download" href="#">앱 받고 혜택 3종 받기 →</a>
         <p class="cta-note">설치 후 회원가입하면 쿠폰이 자동으로 들어가요</p>
-        <div class="qr-box">
+        <div class="qr-box" data-cta="hero_qr" data-cta-type="qr">
           <div class="qr" id="heroQr"></div>
           <div>
             <b>휴대폰 카메라로 스캔하세요</b>
             <p>설치 후 가입하면 혜택 3종이 자동 지급돼요</p>
             <div class="store-row" style="justify-content:flex-start">
-              <a class="store-btn" href="#" data-store="ios">App Store</a>
-              <a class="store-btn" href="#" data-store="android">Google Play</a>
+              <a class="store-btn" href="#" data-store="ios" data-cta="hero_store_ios" data-cta-type="store">App Store</a>
+              <a class="store-btn" href="#" data-store="android" data-cta="hero_store_android" data-cta-type="store">Google Play</a>
             </div>
           </div>
         </div>
@@ -444,7 +444,7 @@
           </div>
         </div>
       </div>
-      <a class="cta inline-cta js-download" data-pos="benefits" href="#">3가지 혜택 한 번에 받기</a>
+      <a class="cta inline-cta js-download" data-cta="benefits_all" data-cta-type="download" href="#">3가지 혜택 한 번에 받기</a>
     </div>
   </section>
 
@@ -458,7 +458,7 @@
         <div class="coupon"><div class="left"><small>배민클럽 첫 달</small><div class="val" data-b="club.amount">0원</div><p>무료배달 무제한 체험</p></div><div class="right">받기</div></div>
         <div class="coupon"><div class="left"><small>친구 초대 · 나와 친구 모두</small><div class="val" data-b="friend.amount">5,000원</div><p>추천인 코드 입력 시</p></div><div class="right">받기</div></div>
       </div>
-      <button class="cta js-claim" type="button">쿠폰 3장 받고 앱으로 가기</button>
+      <button class="cta js-claim" type="button" data-cta="coupon_claim" data-cta-type="claim">쿠폰 3장 받고 앱으로 가기</button>
       <p class="claimed-msg" id="claimedMsg">✓ 쿠폰 3장이 예약됐어요! 앱에서 가입하면 바로 들어가요</p>
     </div>
   </section>
@@ -485,7 +485,7 @@
         </div>
         <p class="sec-label">BAEMIN CLUB</p>
         <h2 class="sec-title display">배달비 걱정 없는<br>배민클럽, 첫 달 <span data-b="club.amount">0원</span></h2>
-        <a class="cta inline-cta js-download" data-pos="club" href="#">첫 달 0원으로 시작하기</a>
+        <a class="cta inline-cta js-download" data-cta="club_trial" data-cta-type="download" href="#">첫 달 0원으로 시작하기</a>
       </div>
       <div class="club-card">
         <div class="club-head">
@@ -520,8 +520,8 @@
             <div><small>초대한 나</small><b data-b="friend.amount">5,000원</b></div>
             <div><small>가입한 친구</small><b data-b="friend.amount">5,000원</b></div>
           </div>
-          <button class="share-btn js-share" type="button">카카오톡으로 친구에게 공유하기</button>
-          <a class="text-link js-download" data-pos="invite" href="#">초대받으셨나요? 가입하고 코드 입력하기 →</a>
+          <button class="share-btn js-share" type="button" data-cta="invite_share" data-cta-type="share">카카오톡으로 친구에게 공유하기</button>
+          <a class="text-link js-download" data-cta="invite_signup" data-cta-type="download" href="#">초대받으셨나요? 가입하고 코드 입력하기 →</a>
         </div>
       </div>
     </div>
@@ -572,7 +572,7 @@
         <li><i>2</i>배민클럽 첫 달 <b data-b="club.amount">0원</b></li>
         <li><i>3</i>친구 초대 둘 다 <b data-b="friend.amount">5,000원</b></li>
       </ul>
-      <a class="cta js-download" data-pos="final" href="#">앱 받고 혜택 3종 받기 →</a>
+      <a class="cta js-download" data-cta="final_main" data-cta-type="download" href="#">앱 받고 혜택 3종 받기 →</a>
       <p class="cond">설치 후 회원가입하면 쿠폰이 자동으로 들어가요</p>
     </div>
   </section>
@@ -586,7 +586,7 @@
 <div class="sticky-cta" id="stickyCta">
   <div class="in">
     <div class="txt"><span class="ln">첫 주문 <b data-b="first.amount">10,000원</b> 할인</span><span class="ln">클럽 <span class="opt">첫 달 </span><b data-b="club.amount">0원</b> · 친구 <b data-b="friend.amount">5,000원</b></span></div>
-    <a class="cta js-download" data-pos="sticky" href="#">혜택 <span class="opt">3종 </span>받기</a>
+    <a class="cta js-download" data-cta="sticky_bar" data-cta-type="download" href="#">혜택 <span class="opt">3종 </span>받기</a>
   </div>
 </div>
 
@@ -596,10 +596,10 @@
     <button class="close" type="button" aria-label="닫기">×</button>
     <h3 id="qrTitle">휴대폰으로 스캔하고 혜택 3종 받기</h3>
     <p>카메라 앱으로 QR을 비추면 설치 페이지로 이동해요</p>
-    <div class="qr" id="modalQr"></div>
+    <div class="qr" id="modalQr" data-cta="modal_qr" data-cta-type="qr"></div>
     <div class="store-row">
-      <a class="store-btn" href="#" data-store="ios">App Store</a>
-      <a class="store-btn" href="#" data-store="android">Google Play</a>
+      <a class="store-btn" href="#" data-store="ios" data-cta="modal_store_ios" data-cta-type="store">App Store</a>
+      <a class="store-btn" href="#" data-store="android" data-cta="modal_store_android" data-cta-type="store">Google Play</a>
     </div>
   </div>
 </div>
@@ -699,14 +699,12 @@
   document.querySelectorAll(".js-download").forEach(el => {
     el.addEventListener("click", e => {
       e.preventDefault();
-      track("cta_click", { position: el.dataset.pos });
       if (os === "desktop") openModal(); else goStore();
     });
   });
   document.querySelectorAll("[data-store]").forEach(el => {
     el.href = storeUrl(el.dataset.store);
     el.target = "_blank"; el.rel = "noopener";
-    el.addEventListener("click", () => track("store_click", { store: el.dataset.store }));
   });
   if (matchMedia("(min-width: 1024px)").matches) drawQr("heroQr", 112);
 
@@ -715,7 +713,6 @@
     document.getElementById("coupons").classList.add("claimed");
     document.querySelectorAll("#coupons .right").forEach(el => { el.textContent = "완료"; });
     document.getElementById("claimedMsg").classList.add("show");
-    track("coupon_claim", {});
     if (os === "desktop") { openModal(); return; }
     claimBtn.textContent = "앱으로 이동 중…";
     setTimeout(goStore, 600);
@@ -723,7 +720,6 @@
 
   document.querySelector(".js-share").addEventListener("click", async () => {
     const shareData = { title: "배민 웰컴 혜택", text: `배민 가입할 때 내 추천인 코드 넣으면 우리 둘 다 ${BENEFITS.friend.amount} 쿠폰!`, url: location.href.split("?")[0] };
-    track("share_click", {});
     try {
       if (navigator.share) await navigator.share(shareData);
       else { await navigator.clipboard.writeText(shareData.url); alert("링크가 복사됐어요! 친구에게 보내주세요."); }
@@ -755,6 +751,41 @@
   document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 
   track("landing_view", {});
+
+  /* =========================================================
+     CTA 노출·클릭 수집
+     - 대상: data-cta="<CTA ID>" 가 붙은 모든 요소 (data-cta-type: download/claim/share/store/qr)
+     - cta_impression: 요소의 50% 이상이 1초 이상 화면에 보이면 페이지당 1회
+     - cta_click: 클릭할 때마다 (페이지 이동 전에 먼저 기록되도록 캡처 단계에서 수집)
+     ========================================================= */
+  const viewport = () => innerWidth >= 1024 ? "desktop" : innerWidth >= 768 ? "tablet" : "mobile";
+  const ctaProps = el => ({
+    cta_id: el.dataset.cta,
+    cta_type: el.dataset.ctaType,
+    cta_label: (el.innerText || el.getAttribute("aria-label") || "").replace(/\s+/g, " ").trim().slice(0, 40),
+    cta_section: el.dataset.cta.split("_")[0],
+    viewport: viewport()
+  });
+
+  const seenCta = new Set(), ctaTimers = new Map();
+  const ctaIo = new IntersectionObserver(entries => entries.forEach(e => {
+    const el = e.target, id = el.dataset.cta;
+    if (seenCta.has(id)) return;
+    if (e.isIntersecting && e.intersectionRatio >= 0.5) {
+      if (!ctaTimers.has(id)) ctaTimers.set(id, setTimeout(() => {
+        seenCta.add(id); ctaTimers.delete(id); ctaIo.unobserve(el);
+        track("cta_impression", ctaProps(el));
+      }, 1000));
+    } else if (ctaTimers.has(id)) {
+      clearTimeout(ctaTimers.get(id)); ctaTimers.delete(id);
+    }
+  }), { threshold: [0, 0.5, 1] });
+  document.querySelectorAll("[data-cta]").forEach(el => ctaIo.observe(el));
+
+  document.addEventListener("click", e => {
+    const el = e.target.closest("[data-cta]");
+    if (el && el.dataset.ctaType !== "qr") track("cta_click", ctaProps(el));
+  }, true);
 </script>
 </body>
 </html>
