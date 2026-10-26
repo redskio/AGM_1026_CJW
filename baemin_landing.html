@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>배민 웰컴 혜택</title>
+<!-- 실습용 공개 배포: 검색 노출 차단 -->
+<meta name="robots" content="noindex, nofollow">
 <!-- 공유 미리보기 문구: 아래 BENEFITS 값과 반드시 동일하게 유지 -->
 <meta name="description" content="처음이거나 1년 만이라면! 첫 주문 10,000원 할인 + 배민클럽 첫 달 0원 + 친구 초대 시 둘 다 5,000원. 지금 앱에서 받으세요.">
 <meta property="og:title" content="웰컴 혜택 3종: 첫 주문 10,000원 할인 · 배민클럽 첫 달 0원 · 친구 초대 둘 다 5,000원">
@@ -49,6 +51,8 @@
   .chips li { display: inline-flex; align-items: center; gap: 5px; font-size: 13px; font-weight: 700; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,.22); white-space: nowrap; }
   .chips li i { font-style: normal; display: inline-grid; place-items: center; width: 18px; height: 18px; border-radius: 50%; background: #fff; color: var(--mint-dark); font-size: 11px; font-weight: 900; }
   .chips li b { color: var(--yellow); font-weight: 900; }
+
+  .demo-notice { background: var(--ink); color: #fff; font-size: 12px; text-align: center; padding: 6px var(--gutter); }
 
   /* ---------- 1. 상단 헤더 ---------- */
   .topbar { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
@@ -308,6 +312,8 @@
 </head>
 <body>
 <div class="page">
+
+  <div class="demo-notice">마케팅 실습용 예시 페이지입니다 · 실제 배달의민족 프로모션이 아니며 혜택은 지급되지 않습니다</div>
 
   <!-- 1. 상단 헤더 -->
   <header class="topbar">
@@ -572,7 +578,7 @@
   </section>
 
   <footer>
-    <div class="wrap">(주)우아한형제들 · 본 페이지는 마케팅 프로모션 안내용입니다.<br>© Woowa Brothers Corp.</div>
+    <div class="wrap">본 페이지는 마케팅 실습을 위해 제작한 예시이며, (주)우아한형제들과 관련이 없습니다. 표시된 혜택은 실제로 제공되지 않습니다.</div>
   </footer>
 </div>
 
