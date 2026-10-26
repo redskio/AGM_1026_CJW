@@ -604,6 +604,7 @@
   </div>
 </div>
 
+<script src="config.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 <script>
   /* =========================================================
@@ -646,10 +647,38 @@
   };
   const storeUrl = (target = os) => withUtm(CONFIG[target] || CONFIG.android);
 
+  /* Amplitude: API 키는 .env → config.js 로 주입 (scripts/build-config.sh)
+     자동 수집(페이지뷰·클릭·UTM 유입) + 세션 리플레이, 아래 track() 이벤트도 함께 전송 */
+  const ampQueue = [];
+  let ampReady = false;
+  (function loadAmplitude() {
+    const key = window.APP_CONFIG && window.APP_CONFIG.amplitudeApiKey;
+    if (!key) return;
+    const s = document.createElement("script");
+    s.src = `https://cdn.amplitude.com/script/${key}.js`;
+    s.async = true;
+    s.onload = () => {
+      if (!window.amplitude) return;
+      if (window.sessionReplay) window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
+      window.amplitude.init(key, { fetchRemoteConfig: true, autocapture: true });
+      ampReady = true;
+      ampQueue.splice(0).forEach(([n, p]) => window.amplitude.track(n, p));
+    };
+    document.head.appendChild(s);
+  })();
+
   function track(name, data) {
     const payload = Object.assign({ event: name, os }, utm, data);
     (window.dataLayer = window.dataLayer || []).push(payload);
     if (window.gtag) window.gtag("event", name, payload);
+    const props = Object.assign({ os, segment: utm.seg || "new" }, utm, data);
+    if (ampReady) window.amplitude.track(name, props); else ampQueue.push([name, props]);
+  }
+
+  // 스토어로 떠나기 전에 쌓인 이벤트를 즉시 전송 (클릭 이벤트 유실 방지)
+  function goStore() {
+    if (ampReady) window.amplitude.flush();
+    setTimeout(() => { location.href = storeUrl(); }, 300);
   }
 
   // QR: 휴대폰에서 스캔하면 이 페이지(유입 파라미터 유지)로 들어와 스토어로 자동 이동
@@ -671,7 +700,7 @@
     el.addEventListener("click", e => {
       e.preventDefault();
       track("cta_click", { position: el.dataset.pos });
-      if (os === "desktop") openModal(); else location.href = storeUrl();
+      if (os === "desktop") openModal(); else goStore();
     });
   });
   document.querySelectorAll("[data-store]").forEach(el => {
@@ -689,7 +718,7 @@
     track("coupon_claim", {});
     if (os === "desktop") { openModal(); return; }
     claimBtn.textContent = "앱으로 이동 중…";
-    setTimeout(() => { location.href = storeUrl(); }, 900);
+    setTimeout(goStore, 600);
   });
 
   document.querySelector(".js-share").addEventListener("click", async () => {
