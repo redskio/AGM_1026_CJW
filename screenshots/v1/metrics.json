@@ -1,0 +1,74 @@
+{
+  "feature-phone": {
+    "heroCtaBottom": 322,
+    "heroCtaAboveFold": false,
+    "scrollW": 240,
+    "vw": 240,
+    "overflow": [],
+    "ctaCount": 7,
+    "firstCtaBottom": 322,
+    "aboveFold": false,
+    "pageH": 5182,
+    "tinyTextNodes": 0
+  },
+  "fold-cover": {
+    "heroCtaBottom": 466,
+    "heroCtaAboveFold": true,
+    "scrollW": 280,
+    "vw": 280,
+    "overflow": [],
+    "ctaCount": 8,
+    "firstCtaBottom": 44,
+    "aboveFold": true,
+    "pageH": 4880,
+    "tinyTextNodes": 1
+  },
+  "iphone-se": {
+    "heroCtaBottom": 470,
+    "heroCtaAboveFold": true,
+    "scrollW": 375,
+    "vw": 375,
+    "overflow": [],
+    "ctaCount": 8,
+    "firstCtaBottom": 46,
+    "aboveFold": true,
+    "pageH": 4700,
+    "tinyTextNodes": 1
+  },
+  "galaxy-flip": {
+    "heroCtaBottom": 580,
+    "heroCtaAboveFold": true,
+    "scrollW": 412,
+    "vw": 412,
+    "overflow": [],
+    "ctaCount": 8,
+    "firstCtaBottom": 46,
+    "aboveFold": true,
+    "pageH": 4790,
+    "tinyTextNodes": 0
+  },
+  "fold-open": {
+    "heroCtaBottom": 580,
+    "heroCtaAboveFold": true,
+    "scrollW": 768,
+    "vw": 768,
+    "overflow": [],
+    "ctaCount": 8,
+    "firstCtaBottom": 46,
+    "aboveFold": true,
+    "pageH": 4427,
+    "tinyTextNodes": 0
+  },
+  "desktop": {
+    "heroCtaBottom": 0,
+    "heroCtaAboveFold": true,
+    "scrollW": 1440,
+    "vw": 1440,
+    "overflow": [],
+    "ctaCount": 7,
+    "firstCtaBottom": 55,
+    "aboveFold": true,
+    "pageH": 4481,
+    "tinyTextNodes": 0
+  }
+}

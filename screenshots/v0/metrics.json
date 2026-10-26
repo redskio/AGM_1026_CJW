@@ -1,0 +1,126 @@
+{
+  "feature-phone": {
+    "amounts": {
+      "10,000원": 4,
+      "15,000원": 1,
+      "0원": 4,
+      "5,000원": 4,
+      "3,990원": 1
+    },
+    "emoji": 16,
+    "heroCtaBottom": 693,
+    "heroCtaAboveFold": false,
+    "scrollW": 240,
+    "vw": 240,
+    "overflow": [
+      "DIV",
+      "e",
+      "B"
+    ],
+    "ctaCount": 5,
+    "firstCtaBottom": 48,
+    "aboveFold": true,
+    "pageH": 5625,
+    "tinyTextNodes": 4
+  },
+  "fold-cover": {
+    "amounts": {
+      "10,000원": 4,
+      "15,000원": 1,
+      "0원": 4,
+      "5,000원": 4,
+      "3,990원": 1
+    },
+    "emoji": 16,
+    "heroCtaBottom": 629,
+    "heroCtaAboveFold": true,
+    "scrollW": 280,
+    "vw": 280,
+    "overflow": [],
+    "ctaCount": 5,
+    "firstCtaBottom": 48,
+    "aboveFold": true,
+    "pageH": 5136,
+    "tinyTextNodes": 4
+  },
+  "iphone-se": {
+    "amounts": {
+      "10,000원": 4,
+      "15,000원": 1,
+      "0원": 4,
+      "5,000원": 4,
+      "3,990원": 1
+    },
+    "emoji": 16,
+    "heroCtaBottom": 605,
+    "heroCtaAboveFold": true,
+    "scrollW": 375,
+    "vw": 375,
+    "overflow": [],
+    "ctaCount": 5,
+    "firstCtaBottom": 48,
+    "aboveFold": true,
+    "pageH": 4703,
+    "tinyTextNodes": 4
+  },
+  "galaxy-flip": {
+    "amounts": {
+      "10,000원": 4,
+      "15,000원": 1,
+      "0원": 4,
+      "5,000원": 4,
+      "3,990원": 1
+    },
+    "emoji": 16,
+    "heroCtaBottom": 605,
+    "heroCtaAboveFold": true,
+    "scrollW": 412,
+    "vw": 412,
+    "overflow": [],
+    "ctaCount": 5,
+    "firstCtaBottom": 48,
+    "aboveFold": true,
+    "pageH": 4643,
+    "tinyTextNodes": 4
+  },
+  "fold-open": {
+    "amounts": {
+      "10,000원": 4,
+      "15,000원": 1,
+      "0원": 4,
+      "5,000원": 4,
+      "3,990원": 1
+    },
+    "emoji": 16,
+    "heroCtaBottom": 605,
+    "heroCtaAboveFold": true,
+    "scrollW": 768,
+    "vw": 768,
+    "overflow": [],
+    "ctaCount": 5,
+    "firstCtaBottom": 48,
+    "aboveFold": true,
+    "pageH": 4604,
+    "tinyTextNodes": 4
+  },
+  "desktop": {
+    "amounts": {
+      "10,000원": 4,
+      "15,000원": 1,
+      "0원": 4,
+      "5,000원": 4,
+      "3,990원": 1
+    },
+    "emoji": 16,
+    "heroCtaBottom": 605,
+    "heroCtaAboveFold": true,
+    "scrollW": 1440,
+    "vw": 1440,
+    "overflow": [],
+    "ctaCount": 5,
+    "firstCtaBottom": 48,
+    "aboveFold": true,
+    "pageH": 4604,
+    "tinyTextNodes": 4
+  }
+}
